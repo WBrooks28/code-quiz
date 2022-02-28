@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./assets/css/style.css" rel="stylesheet">
+    <title>Code Quiz</title>
+</head>
+<body>
+    <header id="header">
+        <div id="timer-container">
+            <p id="timer-text">Timer: </p>
+            <p id="timer">100</p>
+        </div>
+    </header>
+    <div id="main-content">
+        <div class="container">
+            <h1 id="title-text">Coding Quiz Challenge</h1>
+            <div id="instruction-container">
+                <p id="instruction">Answer the following questions before the timer runs out. Incorrect answers will reduce the timer by 10.</p>
+            </div>
+            <div id="question-container" class="hidden">
+                <div id="answer-container">
+                    <button id="choice-one" class="btn answer-btn">Answer 1</button>
+                    <button id="choice-two" class="btn answer-btn">Answer 2</button>
+                    <button id="choice-three" class="btn answer-btn">Answer 3</button>
+                    <button id="choice-four" class="btn answer-btn">Answer 4</button>
+                </div>
+            </div>
+            <div id="results" class="hidden">
+                <div id="high-score-container">
+                    <div class="username-container">
+                        <div id="initial-initials">Initials: </div>
+                        <div class="initials-value"></div>
+                    </div>
+                </div>
+                <div id="score-container">
+                    <div>Score: </div>
+                    <div id="score-value"></div>
+                </div>
+                <form id="input-form">
+                    <label for="initials" id="initial-label">Initials:</label>
+                    <input type="text" id="initials" placeholder="...">
+                    <button type="submit" id="submit-btn" class="btn">Submit</button>
+                </form>
+            </div>
+            <div class="controls">
+                <button id="start-btn" class="btn">Start Quiz</button>
+                <div id="end-btns">
+                    <button id="restart-btn" class="btn hidden">Restart</button>
+                    <button id="clear-btn" class="btn hidden">Clear Score</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/script.js"></script>
+</html>
